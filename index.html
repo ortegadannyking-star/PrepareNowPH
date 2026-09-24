@@ -4,43 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrepareNow PH</title>
 
-    <link rel="stylesheet" href="style.css">
+    <title>PrepareNow PH | Disaster Preparedness Campaign</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <meta name="description"
+        content="PrepareNow PH promotes disaster preparedness, safety awareness, and community resilience in the Philippines.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet"
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-    <header>
+    <header class="header">
 
         <nav class="navbar">
 
-            <div class="logo">
+            <a href="#home" class="logo">
                 <i class="fa-solid fa-shield-heart"></i>
-                PrepareNow PH
-            </div>
+                <span>PrepareNow <b>PH</b></span>
+            </a>
 
-            <ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-links" id="navLinks">
 
-                <li><a href="#disasters">Disasters</a></li>
-
-                <li><a href="#guide">Guide</a></li>
-
-                <li><a href="#gobag">Go Bag</a></li>
-
-                <li><a href="#hotlines">Hotlines</a></li>
-
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#issue" class="nav-link">Community Issue</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
 
             </ul>
 
@@ -48,441 +63,1204 @@
 
     </header>
 
-    <!-- HERO -->
 
-    <section class="hero" id="home">
+    <main>
 
-        <div class="overlay"></div>
+        <!-- =========================
+             HOME
+        ========================== -->
 
-        <div class="hero-content">
+        <section class="hero" id="home">
 
-            <span class="tag">
-                Disaster Preparedness Website
-            </span>
+            <div class="hero-overlay"></div>
 
-            <h1>
+            <div class="hero-content">
 
-                Be Ready
-                Before Disaster
-                Strikes
+                <span class="hero-label">
+                    DISASTER PREPAREDNESS CAMPAIGN
+                </span>
 
-            </h1>
+                <h1>
+                    Be Ready.<br>
+                    Stay Safe.<br>
+                    <span>Help Your Community.</span>
+                </h1>
+
+                <p>
+                    PrepareNow PH promotes disaster preparedness,
+                    awareness, and community resilience in the Philippines.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#resources" class="btn btn-primary">
+                        Learn How to Prepare
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        About Our Campaign
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section" id="about">
+
+            <div class="section-heading">
+
+                <span>ABOUT US</span>
+
+                <h2>Building a Culture of Preparedness</h2>
+
+                <p>
+                    PrepareNow PH is a student-led campaign that encourages
+                    people to understand disaster risks and prepare before
+                    emergencies happen.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="info-card">
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <h3>Our Mission</h3>
+
+                    <p>
+                        To promote disaster preparedness by providing simple,
+                        useful, and accessible information that people can use
+                        before, during, and after disasters.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <h3>Our Vision</h3>
+
+                    <p>
+                        A community where people are informed, prepared,
+                        responsible, and ready to help one another during
+                        emergencies.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+
+                    <h3>Our Objectives</h3>
+
+                    <p>
+                        Increase disaster awareness, encourage emergency
+                        planning, promote preparedness activities, and help
+                        communities become more resilient.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <span class="small-title">OUR GROUP</span>
+
+                    <h3>Students Working for a Safer Community</h3>
+
+                    <p>
+                        PrepareNow PH was created by students who want to
+                        promote disaster awareness and preparedness in their
+                        community.
+                    </p>
+
+                    <p>
+                        Through this campaign, we share educational
+                        information, preparedness tips, activities, and
+                        helpful resources that can encourage people to
+                        take action before disasters happen.
+                    </p>
+
+                </div>
+
+
+                <div class="about-highlight">
+
+                    <i class="fa-solid fa-people-group"></i>
+
+                    <h3>Preparedness Starts With Us</h3>
+
+                    <p>
+                        Everyone can take simple steps to become more prepared.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMMUNITY ISSUE
+        ========================== -->
+
+        <section class="section section-dark" id="issue">
+
+            <div class="section-heading">
+
+                <span>COMMUNITY ISSUE</span>
+
+                <h2>Why Disaster Preparedness Matters</h2>
+
+                <p>
+                    Disasters can affect homes, schools, businesses,
+                    communities, and people's daily lives.
+                </p>
+
+            </div>
+
+
+            <div class="issue-grid">
+
+                <div class="issue-card">
+
+                    <div class="issue-number">01</div>
+
+                    <h3>The Problem</h3>
+
+                    <p>
+                        Some people may not know what to do before,
+                        during, or after a disaster. Lack of preparation
+                        can make emergencies more difficult to handle.
+                    </p>
+
+                </div>
+
+
+                <div class="issue-card">
+
+                    <div class="issue-number">02</div>
+
+                    <h3>Common Causes</h3>
+
+                    <p>
+                        Lack of awareness, limited emergency planning,
+                        misinformation, and failure to prepare supplies
+                        can increase community risks.
+                    </p>
+
+                </div>
+
+
+                <div class="issue-card">
+
+                    <div class="issue-number">03</div>
+
+                    <h3>Possible Effects</h3>
+
+                    <p>
+                        Disasters can cause injuries, property damage,
+                        interruptions to education and work, displacement,
+                        and disruption of basic services.
+                    </p>
+
+                </div>
+
+
+                <div class="issue-card">
+
+                    <div class="issue-number">04</div>
+
+                    <h3>Possible Solutions</h3>
+
+                    <p>
+                        Communities can improve preparedness through
+                        emergency plans, drills, information campaigns,
+                        go-bags, evacuation plans, and reliable information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="official-box">
+
+                <div>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                </div>
+
+                <div>
+
+                    <h3>Get Information From Reliable Sources</h3>
+
+                    <p>
+                        Check official government agencies for weather,
+                        earthquake, volcanic, and disaster-related
+                        information.
+                    </p>
+
+                </div>
+
+                <a
+                    href="https://www.pagasa.dost.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary">
+                    Visit PAGASA
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROGRAMS
+        ========================== -->
+
+        <section class="section" id="programs">
+
+            <div class="section-heading">
+
+                <span>PROGRAMS & ACTIVITIES</span>
+
+                <h2>Take Part in Preparedness Activities</h2>
+
+                <p>
+                    Preparedness becomes stronger when people learn
+                    and work together.
+                </p>
+
+            </div>
+
+
+            <div class="program-grid">
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <span>UPCOMING EVENT</span>
+
+                    <h3>Community Preparedness Day</h3>
+
+                    <p>
+                        An awareness activity focused on basic disaster
+                        preparedness and emergency planning.
+                    </p>
+
+                    <div class="program-date">
+                        <i class="fa-regular fa-clock"></i>
+                        Schedule to be announced
+                    </div>
+
+                </div>
+
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+
+                    <span>ONGOING PROJECT</span>
+
+                    <h3>Emergency Go-Bag Awareness</h3>
+
+                    <p>
+                        Encouraging families and students to learn about
+                        important emergency supplies.
+                    </p>
+
+                    <div class="program-date">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Ongoing
+                    </div>
+
+                </div>
+
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+                        <i class="fa-solid fa-people-carry-box"></i>
+                    </div>
+
+                    <span>VOLUNTEER ACTIVITY</span>
+
+                    <h3>Preparedness Information Drive</h3>
+
+                    <p>
+                        Sharing useful disaster-preparedness information
+                        with friends, classmates, and community members.
+                    </p>
+
+                    <div class="program-date">
+                        <i class="fa-solid fa-users"></i>
+                        Community activity
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="calendar-box">
+
+                <div class="calendar-icon">
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+
+                <div>
+
+                    <h3>Event Calendar</h3>
+
+                    <p>
+                        Follow our campaign for upcoming preparedness
+                        activities and announcements.
+                    </p>
+
+                </div>
+
+                <a href="#contact" class="text-button">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALLERY
+        ========================== -->
+
+        <section class="section section-dark" id="gallery">
+
+            <div class="section-heading">
+
+                <span>GALLERY</span>
+
+                <h2>Preparedness in Action</h2>
+
+                <p>
+                    Photos and videos from our campaign activities.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-large">
+
+                    <div class="gallery-placeholder">
+
+                        <i class="fa-solid fa-image"></i>
+
+                        <h3>Campaign Activities</h3>
+
+                        <p>Photos will be added here.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <div class="gallery-placeholder">
+
+                        <i class="fa-solid fa-people-group"></i>
+
+                        <h3>Community Events</h3>
+
+                        <p>Event photos will be added here.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <div class="gallery-placeholder">
+
+                        <i class="fa-solid fa-bullhorn"></i>
+
+                        <h3>Awareness Campaign</h3>
+
+                        <p>Campaign highlights will be added here.</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item video-item">
+
+                    <div class="gallery-placeholder">
+
+                        <i class="fa-solid fa-circle-play"></i>
+
+                        <h3>Educational Videos</h3>
+
+                        <p>Videos will be added here.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESOURCES
+        ========================== -->
+
+        <section class="section" id="resources">
+
+            <div class="section-heading">
+
+                <span>RESOURCES</span>
+
+                <h2>Learn. Prepare. Stay Informed.</h2>
+
+                <p>
+                    Use reliable resources to learn more about disaster
+                    preparedness in the Philippines.
+                </p>
+
+            </div>
+
+
+            <div class="resource-grid">
+
+                <a
+                    href="https://www.pagasa.dost.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+
+                    <div>
+
+                        <span>OFFICIAL RESOURCE</span>
+
+                        <h3>PAGASA</h3>
+
+                        <p>
+                            Weather forecasts, tropical cyclone information,
+                            rainfall warnings, and other weather information.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+
+                </a>
+
+
+                <a
+                    href="https://ndrrmc.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <div>
+
+                        <span>OFFICIAL RESOURCE</span>
+
+                        <h3>NDRRMC Philippines</h3>
+
+                        <p>
+                            Disaster risk reduction and management
+                            information and updates.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.phivolcs.dost.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-volcano"></i>
+                    </div>
+
+                    <div>
+
+                        <span>OFFICIAL RESOURCE</span>
+
+                        <h3>PHIVOLCS</h3>
+
+                        <p>
+                            Information about earthquakes, volcanoes,
+                            tsunamis, and related hazards.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square resource-arrow"></i>
+
+                </a>
+
+
+                <div class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <div>
+
+                        <span>EDUCATIONAL</span>
+
+                        <h3>Preparedness Articles</h3>
+
+                        <p>
+                            Learn simple ways to prepare your home,
+                            school, and community for emergencies.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-book resource-arrow"></i>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-file-image"></i>
+                    </div>
+
+                    <div>
+
+                        <span>INFORMATION</span>
+
+                        <h3>Posters & Infographics</h3>
+
+                        <p>
+                            Easy-to-understand preparedness information
+                            for students and community members.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-image resource-arrow"></i>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </div>
+
+                    <div>
+
+                        <span>DOWNLOADS</span>
+
+                        <h3>Brochures & Flyers</h3>
+
+                        <p>
+                            Downloadable campaign materials can be added
+                            here for community use.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-download resource-arrow"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NEWS
+        ========================== -->
+
+        <section class="section section-dark" id="news">
+
+            <div class="section-heading">
+
+                <span>NEWS & UPDATES</span>
+
+                <h2>Latest Campaign Updates</h2>
+
+                <p>
+                    Follow our activities and progress as we promote
+                    disaster preparedness.
+                </p>
+
+            </div>
+
+
+            <div class="news-grid">
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+
+                    <div class="news-content">
+
+                        <span>CAMPAIGN</span>
+
+                        <h3>PrepareNow PH Launch</h3>
+
+                        <p>
+                            PrepareNow PH introduces a campaign focused
+                            on disaster awareness and preparedness.
+                        </p>
+
+                        <a href="#about" class="text-button">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <div class="news-content">
+
+                        <span>ACTIVITY</span>
+
+                        <h3>Community Preparedness Activities</h3>
+
+                        <p>
+                            Our group continues to promote simple
+                            preparedness actions within the community.
+                        </p>
+
+                        <a href="#programs" class="text-button">
+                            View Activities
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="news-card">
+
+                    <div class="news-image">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+
+                    <div class="news-content">
+
+                        <span>MISSION</span>
+
+                        <h3>Creating a Culture of Preparedness</h3>
+
+                        <p>
+                            We believe preparedness should become a normal
+                            part of everyday community life.
+                        </p>
+
+                        <a href="#resources" class="text-button">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TEAM
+        ========================== -->
+
+        <section class="section" id="team">
+
+            <div class="section-heading">
+
+                <span>OUR TEAM</span>
+
+                <h2>Meet the People Behind PrepareNow PH</h2>
+
+                <p>
+                    PrepareNow PH was created by students who want to promote
+                    disaster preparedness and awareness in the community.
+                </p>
+
+            </div>
+
+
+            <div class="team-grid">
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Danny King M. Ortega</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Rhafael Biluan</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Jhon Vincent Amurao</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Johnlloyd Antido</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Ramiel Busangilan</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Jemilyn Orpilia</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>John Paul Mendina</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Kurt Jerome Menor</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section section-dark" id="contact">
+
+            <div class="section-heading">
+
+                <span>CONTACT US</span>
+
+                <h2>Let's Promote Preparedness Together</h2>
+
+                <p>
+                    Have a question or want to support our campaign?
+                    Send us a message.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+
+                            <span>EMAIL</span>
+
+                            <p>preparenowph@example.com</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+
+                            <span>PHONE</span>
+
+                            <p>+63 XXX XXX XXXX</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+
+                            <span>LOCATION</span>
+
+                            <p>Philippines</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">Your Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Your Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary form-button">
+
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-about">
+
+                <a href="#home" class="logo">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    <span>PrepareNow <b>PH</b></span>
+
+                </a>
+
+                <p>
+                    Promoting disaster preparedness, awareness,
+                    and community resilience in the Philippines.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#issue">Community Issue</a>
+                <a href="#programs">Programs</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Official Resources</h3>
+
+                <a
+                    href="https://www.pagasa.dost.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    PAGASA
+                </a>
+
+                <a
+                    href="https://ndrrmc.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    NDRRMC
+                </a>
+
+                <a
+                    href="https://www.phivolcs.dost.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    PHIVOLCS
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    preparenowph@example.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Philippines
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
 
             <p>
-
-                Learn how to prepare before,
-                during, and after earthquakes,
-                typhoons, floods,
-                landslides, and tsunamis.
-
+                © <span id="year"></span> PrepareNow PH. All rights reserved.
             </p>
 
-            <div class="hero-buttons">
-
-                <a href="#guide" class="btn">
-
-                    Get Started
-
-                </a>
-
-                <a href="#hotlines" class="btn secondary">
-
-                    Emergency Hotlines
-
-                </a>
-
-            </div>
+            <p>
+                Be ready. Stay safe. Help your community.
+            </p>
 
         </div>
 
-    </section>
+    </footer>
 
-    <!-- LIVE STATUS -->
 
-    <section class="status">
+    <!-- Back To Top -->
 
-        <h2 class="section-title">
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
 
-            Emergency Status
+        <i class="fa-solid fa-arrow-up"></i>
 
-        </h2>
+    </button>
 
-        <div class="status-grid">
 
-            <div class="status-card">
+    <!-- JavaScript -->
 
-                <i class="fa-solid fa-house-crack"></i>
-
-                <h3>Earthquake</h3>
-
-                <h2>Low Risk</h2>
-
-                <p>Stay prepared at all times.</p>
-
-            </div>
-
-            <div class="status-card">
-
-                <i class="fa-solid fa-cloud-showers-heavy"></i>
-
-                <h3>Weather</h3>
-
-                <h2>Monitor</h2>
-
-                <p>Check PAGASA advisories.</p>
-
-            </div>
-
-            <div class="status-card">
-
-                <i class="fa-solid fa-water"></i>
-
-                <h3>Flood</h3>
-
-                <h2>Normal</h2>
-
-                <p>No current flood warning.</p>
-
-            </div>
-
-            <div class="status-card">
-
-                <i class="fa-solid fa-triangle-exclamation"></i>
-
-                <h3>Emergency</h3>
-
-                <h2>Ready</h2>
-
-                <p>Prepare your Go-Bag.</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- DISASTER SECTION -->
-
-    <section id="disasters">
-
-        <h2 class="section-title">
-
-            Disaster Information
-
-        </h2>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <img src="images/earthquake.jpg" alt="Earthquake">
-
-                <div class="card-content">
-
-                    <h3>🌍 Earthquake</h3>
-
-                    <p>
-
-                        Practice
-                        Drop,
-                        Cover,
-                        and Hold.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="images/typhoon.jpg" alt="Typhoon">
-
-                <div class="card-content">
-
-                    <h3>🌀 Typhoon</h3>
-
-                    <p>
-
-                        Stay indoors and
-                        monitor weather updates.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="images/flood.jpg" alt="Flood">
-
-                <div class="card-content">
-
-                    <h3>🌊 Flood</h3>
-
-                    <p>
-
-                        Move to higher ground
-                        immediately.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="images/landslide.jpg" alt="Landslide">
-
-                <div class="card-content">
-
-                    <h3>⛰️ Landslide</h3>
-
-                    <p>
-
-                        Avoid steep slopes
-                        during heavy rain.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="images/tsunami.jpg" alt="Tsunami">
-
-                <div class="card-content">
-
-                    <h3>🌊 Tsunami</h3>
-
-                    <p>
-
-                        Go to higher ground
-                        after a strong earthquake.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- PREPAREDNESS GUIDE -->
-
-<section id="guide">
-
-    <h2 class="section-title">
-        Emergency Guide
-    </h2>
-
-    <div class="guide">
-
-        <div class="box">
-            <i class="fa-solid fa-circle-check"></i>
-            <h3>Before</h3>
-
-            <ul>
-                <li>✔ Prepare a Go Bag</li>
-                <li>✔ Secure heavy furniture</li>
-                <li>✔ Know evacuation routes</li>
-                <li>✔ Charge phones & power banks</li>
-                <li>✔ Save emergency numbers</li>
-            </ul>
-
-        </div>
-
-        <div class="box">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <h3>During</h3>
-
-            <ul>
-                <li>✔ Stay calm</li>
-                <li>✔ Drop, Cover and Hold</li>
-                <li>✔ Stay away from windows</li>
-                <li>✔ Follow authorities</li>
-                <li>✔ Do not panic</li>
-            </ul>
-
-        </div>
-
-        <div class="box">
-            <i class="fa-solid fa-house"></i>
-
-            <h3>After</h3>
-
-            <ul>
-                <li>✔ Check for injuries</li>
-                <li>✔ Expect aftershocks</li>
-                <li>✔ Listen to official updates</li>
-                <li>✔ Avoid damaged buildings</li>
-                <li>✔ Help others safely</li>
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- GO BAG -->
-
-<section id="gobag">
-
-<h2 class="section-title">
-Emergency Go Bag
-</h2>
-
-<div class="cards">
-
-<div class="card"><h3>💧 Water</h3></div>
-
-<div class="card"><h3>🥫 Food</h3></div>
-
-<div class="card"><h3>💊 Medicine</h3></div>
-
-<div class="card"><h3>🔦 Flashlight</h3></div>
-
-<div class="card"><h3>📻 Radio</h3></div>
-
-<div class="card"><h3>🔋 Batteries</h3></div>
-
-<div class="card"><h3>📱 Power Bank</h3></div>
-
-<div class="card"><h3>🪪 Documents</h3></div>
-
-</div>
-
-</section>
-
-<!-- HOTLINES -->
-
-<section id="hotlines">
-
-<h2 class="section-title">
-Emergency Hotlines
-</h2>
-
-<table>
-
-<tr>
-<th>Agency</th>
-<th>Contact</th>
-</tr>
-
-<tr>
-<td>NDRRMC</td>
-<td>911</td>
-</tr>
-
-<tr>
-<td>Philippine Red Cross</td>
-<td>143</td>
-</tr>
-
-<tr>
-<td>Philippine National Police</td>
-<td>117</td>
-</tr>
-
-<tr>
-<td>Bureau of Fire Protection</td>
-<td>160</td>
-</tr>
-
-<tr>
-<td>Emergency Medical Services</td>
-<td>911</td>
-</tr>
-
-</table>
-
-</section>
-
-<!-- FAQ -->
-
-<section id="faq">
-
-<h2 class="section-title">
-Frequently Asked Questions
-</h2>
-
-<button class="accordion">
-What should I do during an earthquake?
-</button>
-
-<div class="panel">
-
-<p>
-Drop, Cover, and Hold until the shaking stops.
-Stay away from windows and heavy objects.
-</p>
-
-</div>
-
-<button class="accordion">
-What should be inside my Go Bag?
-</button>
-
-<div class="panel">
-
-<p>
-Water, food, medicine,
-flashlight,
-radio,
-power bank,
-documents,
-extra clothes,
-and batteries.
-</p>
-
-</div>
-
-<button class="accordion">
-Where can I get official updates?
-</button>
-
-<div class="panel">
-
-<p>
-Follow updates from
-PHIVOLCS,
-PAGASA,
-and NDRRMC.
-</p>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<h2>PrepareNow PH</h2>
-
-<p>
-
-Be Ready • Stay Safe • Save Lives
-
-</p>
-
-<p>
-
-© 2026 PrepareNow PH.
-All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
