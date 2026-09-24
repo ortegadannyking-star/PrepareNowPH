@@ -1,105 +1,85 @@
-// ==========================
-// FAQ ACCORDION
-// ==========================
+/* =========================
+   MOBILE MENU
+========================= */
 
-const accordions = document.querySelectorAll(".accordion");
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
-accordions.forEach(button => {
+menuToggle.addEventListener("click", function () {
 
-    button.addEventListener("click", function(){
+    navLinks.classList.toggle("show");
 
-        this.classList.toggle("active");
+    const icon = menuToggle.querySelector("i");
 
-        const panel = this.nextElementSibling;
+    if (navLinks.classList.contains("show")) {
 
-        if(panel.style.display === "block"){
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
 
-            panel.style.display = "none";
+    } else {
 
-        }else{
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
 
-            panel.style.display = "block";
+    }
 
-        }
+});
+
+
+/* =========================
+   CLOSE MOBILE MENU
+========================= */
+
+const navItems = document.querySelectorAll(".nav-link");
+
+navItems.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navLinks.classList.remove("show");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
 
     });
 
 });
 
-// ==========================
-// SMOOTH SCROLL
-// ==========================
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+/* =========================
+   ACTIVE NAVIGATION
+========================= */
 
-    anchor.addEventListener("click",function(e){
+const sections = document.querySelectorAll("section[id]");
 
-        e.preventDefault();
+window.addEventListener("scroll", function () {
 
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
+    let currentSection = "";
 
-            behavior:"smooth"
+    sections.forEach(function (section) {
 
-        });
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
 
-    });
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+        ) {
 
-});
-
-// ==========================
-// SCROLL ANIMATION
-// ==========================
-
-const cards = document.querySelectorAll(".card,.box,.status-card");
-
-const observer = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show");
+            currentSection = section.getAttribute("id");
 
         }
 
     });
 
-},{threshold:0.2});
 
-cards.forEach(card=>{
-
-    observer.observe(card);
-
-});
-
-// ==========================
-// ACTIVE NAVIGATION
-// ==========================
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".navbar a");
-
-window.addEventListener("scroll",()=>{
-
-    let current = "";
-
-    sections.forEach(section=>{
-
-        const sectionTop = section.offsetTop - 150;
-
-        if(window.scrollY >= sectionTop){
-
-            current = section.getAttribute("id");
-
-        }
-
-    });
-
-    navLinks.forEach(link=>{
+    navItems.forEach(function (link) {
 
         link.classList.remove("active");
 
-        if(link.getAttribute("href") === "#" + current){
+        if (link.getAttribute("href") === "#" + currentSection) {
 
             link.classList.add("active");
 
@@ -109,87 +89,145 @@ window.addEventListener("scroll",()=>{
 
 });
 
-// ==========================
-// BACK TO TOP BUTTON
-// ==========================
 
-const topBtn = document.createElement("button");
+/* =========================
+   BACK TO TOP
+========================= */
 
-topBtn.innerHTML = "⬆";
+const backToTop = document.getElementById("backToTop");
 
-topBtn.id = "topBtn";
+window.addEventListener("scroll", function () {
 
-document.body.appendChild(topBtn);
+    if (window.scrollY > 500) {
 
-topBtn.style.position = "fixed";
-topBtn.style.bottom = "25px";
-topBtn.style.right = "25px";
-topBtn.style.width = "50px";
-topBtn.style.height = "50px";
-topBtn.style.border = "none";
-topBtn.style.borderRadius = "50%";
-topBtn.style.background = "#ff7a00";
-topBtn.style.color = "#fff";
-topBtn.style.fontSize = "22px";
-topBtn.style.cursor = "pointer";
-topBtn.style.display = "none";
-topBtn.style.boxShadow = "0 5px 15px rgba(0,0,0,.3)";
-topBtn.style.zIndex = "1000";
+        backToTop.classList.add("show");
 
-window.addEventListener("scroll",()=>{
+    } else {
 
-    if(window.scrollY > 400){
-
-        topBtn.style.display = "block";
-
-    }else{
-
-        topBtn.style.display = "none";
+        backToTop.classList.remove("show");
 
     }
 
 });
 
-topBtn.addEventListener("click",()=>{
+
+backToTop.addEventListener("click", function () {
 
     window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
+        top: 0,
+        behavior: "smooth"
     });
 
 });
 
-// ==========================
-// HERO BUTTON EFFECT
-// ==========================
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+const animatedElements = document.querySelectorAll(
+    ".info-card, .issue-card, .program-card, .resource-card, .news-card, .team-card, .gallery-item"
+);
+
+
+const observer = new IntersectionObserver(
+    function (entries, observer) {
+
+        entries.forEach(function (entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+
+animatedElements.forEach(function (element) {
+
+    observer.observe(element);
+
+});
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+
+    if (!name || !email || !subject || !message) {
+
+        alert("Please fill in all the fields.");
+
+        return;
+
+    }
+
+
+    alert(
+        "Thank you, " +
+        name +
+        "! Your message has been received."
+    );
+
+
+    contactForm.reset();
+
+});
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+const yearElement = document.getElementById("year");
+
+yearElement.textContent = new Date().getFullYear();
+
+
+/* =========================
+   BUTTON HOVER EFFECT
+========================= */
 
 const buttons = document.querySelectorAll(".btn");
 
-buttons.forEach(button=>{
+buttons.forEach(function (button) {
 
-    button.addEventListener("mouseenter",()=>{
+    button.addEventListener("mouseenter", function () {
 
-        button.style.transform="scale(1.05)";
-
-    });
-
-    button.addEventListener("mouseleave",()=>{
-
-        button.style.transform="scale(1)";
+        button.style.transition = "0.3s";
 
     });
 
 });
 
-// ==========================
-// PAGE LOAD ANIMATION
-// ==========================
 
-window.onload = ()=>{
+/* =========================
+   PAGE LOAD
+========================= */
 
-    document.body.style.opacity = "1";
+window.addEventListener("load", function () {
 
-};
+    document.body.classList.add("loaded");
+
+});
