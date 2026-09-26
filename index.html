@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -27,6 +27,52 @@
 </head>
 
 <body>
+
+    <!-- =========================
+         PREPARENOW PH ENTRY SCREEN
+    ========================== -->
+
+    <div class="entry-screen" id="entryScreen">
+
+        <div class="entry-background"></div>
+
+        <div class="entry-content">
+
+            <div class="entry-logo">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+
+            <div class="entry-status">
+                <span></span>
+                SYSTEM READY
+            </div>
+
+            <p class="entry-label">DISASTER PREPAREDNESS CAMPAIGN</p>
+
+            <h1>
+                PrepareNow <b>PH</b>
+            </h1>
+
+            <div class="entry-line"></div>
+
+            <p class="entry-message">
+                Be Ready. Stay Safe.<br>
+                Help Your Community.
+            </p>
+
+            <button class="entry-button" id="enterButton">
+                <span>ENTER PREPARENOW PH</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <small>
+                No account required
+            </small>
+
+        </div>
+
+    </div>
+
 
     <!-- =========================
          HEADER
@@ -53,6 +99,7 @@
                 <li><a href="#programs" class="nav-link">Programs</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#live-monitoring" class="nav-link">Live Map</a></li>
                 <li><a href="#news" class="nav-link">News</a></li>
                 <li><a href="#team" class="nav-link">Team</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -461,7 +508,6 @@
 
         </section>
 
-
         <!-- =========================
              GALLERY
         ========================== -->
@@ -483,61 +529,56 @@
 
             <div class="gallery-grid">
 
-                <div class="gallery-item gallery-large">
+                <div class="gallery-item gallery-video-top">
 
-                    <div class="gallery-placeholder">
+                    <iframe
+                        src="https://www.youtube.com/embed/y16aMLeh91Q"
+                        title="Educational Video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="gallery-media">
+                    </iframe>
 
-                        <i class="fa-solid fa-image"></i>
-
-                        <h3>Campaign Activities</h3>
-
-                        <p>Photos will be added here.</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <div class="gallery-placeholder">
-
-                        <i class="fa-solid fa-people-group"></i>
-
-                        <h3>Community Events</h3>
-
-                        <p>Event photos will be added here.</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <div class="gallery-placeholder">
-
-                        <i class="fa-solid fa-bullhorn"></i>
-
-                        <h3>Awareness Campaign</h3>
-
-                        <p>Campaign highlights will be added here.</p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="gallery-item video-item">
-
-                    <div class="gallery-placeholder">
-
-                        <i class="fa-solid fa-circle-play"></i>
-
+                    <div class="gallery-caption">
                         <h3>Educational Videos</h3>
+                    
+                    </div>
 
-                        <p>Videos will be added here.</p>
+                </div>
 
+
+                <div class="gallery-item">
+
+                    <img src="image/campaign-activities.jpg" alt="Campaign Activities" class="gallery-media">
+
+                    <div class="gallery-caption">
+                        <h3>Campaign Activities</h3>
+                       
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="image/community-events.jpg" alt="Community Events" class="gallery-media">
+
+                    <div class="gallery-caption">
+                        <h3>Community Events</h3>
+                       
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="image/awareness-campaign.jpg" alt="Awareness Campaign" class="gallery-media">
+
+                    <div class="gallery-caption">
+                        <h3>Awareness Campaign</h3>
+                
                     </div>
 
                 </div>
@@ -861,13 +902,15 @@
 
                 <div class="team-card">
 
+                    
                     <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                <img src="image/danny.jpg" alt="">
+                 </div>
+
 
                     <h3>Danny King M. Ortega</h3>
 
-                    <p>Campaign Team Member</p>
+                    <p>Shadow Monarch</p>
 
                 </div>
 
@@ -875,8 +918,8 @@
                 <div class="team-card">
 
                     <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                <img src="image/rhafael.jpg" alt="">
+                 </div>
 
                     <h3>Rhafael Biluan</h3>
 
@@ -888,8 +931,8 @@
                 <div class="team-card">
 
                     <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                <img src="image/vincent.jpg" alt="">
+                 </div>
 
                     <h3>Jhon Vincent Amurao</h3>
 
@@ -900,9 +943,9 @@
 
                 <div class="team-card">
 
-                    <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                     <div class="team-icon">
+                <img src="image/antido.jpg" alt="">
+                 </div>
 
                     <h3>Johnlloyd Antido</h3>
 
@@ -913,9 +956,9 @@
 
                 <div class="team-card">
 
-                    <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                     <div class="team-icon">
+                <img src="image/ramiel.jpg" alt="">
+                 </div>
 
                     <h3>Ramiel Busangilan</h3>
 
@@ -926,9 +969,9 @@
 
                 <div class="team-card">
 
-                    <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                     <div class="team-icon">
+                <img src="image/orpilla.jpg" alt="">
+                 </div>
 
                     <h3>Jemilyn Orpilia</h3>
 
@@ -940,8 +983,9 @@
                 <div class="team-card">
 
                     <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                <img src="image/mendina.jpg" alt="">
+                 </div>
+
 
                     <h3>John Paul Mendina</h3>
 
@@ -951,10 +995,10 @@
 
 
                 <div class="team-card">
-
-                    <div class="team-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+   
+                 <div class="team-icon">
+                <img src="image/menor.jpg" alt="">
+                 </div>
 
                     <h3>Kurt Jerome Menor</h3>
 
@@ -962,6 +1006,17 @@
 
                 </div>
 
+
+                <div class="team-card">
+   
+                 <div class="team-icon">
+                <img src="image/kervi.jpg" alt="">
+                 </div>
+                    <h3>Kervi Fuerte</h3>
+
+                    <p>Campaign Team Member</p>
+
+                </div>
 
             </div>
 
@@ -1142,8 +1197,600 @@
 
         </section>
 
+
+        <!-- =========================================================
+             PREPARENOW PH - PREPAREDNESS CENTER
+             Added without removing or replacing the original sections.
+        ========================================================== -->
+
+        <section class="section preparedness-center" id="preparedness">
+
+            <div class="section-heading">
+                <span>PREPAREDNESS CENTER</span>
+
+                <h2>Prepare Before an Emergency Happens</h2>
+
+                <p>
+                    Use this quick preparedness center to check your
+                    emergency supplies, review evacuation planning,
+                    and find official Philippine information.
+                </p>
+            </div>
+
+
+            <div class="preparedness-banner">
+
+                <div class="preparedness-banner-content">
+
+                    <span>DISASTER PREPAREDNESS</span>
+
+                    <h3>Typhoons. Floods. Earthquakes. Be Ready.</h3>
+
+                    <p>
+                        A few minutes of preparation can help families
+                        know what to do, where to go, and where to get
+                        reliable information during an emergency.
+                    </p>
+
+                    <div class="preparedness-buttons">
+
+                        <a href="#go-bag" class="btn btn-primary">
+                            Check Your Go-Bag
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a
+                            href="https://www.pagasa.dost.gov.ph/weather"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary">
+                            Check PAGASA Weather
+                            <i class="fa-solid fa-cloud-sun"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="preparedness-banner-icon">
+                    <i class="fa-solid fa-house-circle-check"></i>
+                </div>
+
+            </div>
+
+
+            <div class="preparedness-grid" id="go-bag">
+
+                <div class="preparedness-card go-bag-card">
+
+                    <div class="preparedness-card-icon">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+
+                    <span class="preparedness-label">EMERGENCY GO-BAG</span>
+
+                    <h3>Go-Bag Checklist</h3>
+
+                    <p>
+                        Check the basic items you may want to prepare
+                        for an emergency. Add items based on your
+                        household's needs.
+                    </p>
+
+                    <div class="checklist">
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Drinking water</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Ready-to-eat food</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>First-aid supplies</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Flashlight and spare batteries</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Whistle</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Important documents</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Essential medicines</span>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" class="go-bag-item">
+                            <span>Extra clothes and hygiene items</span>
+                        </label>
+
+                    </div>
+
+                    <div class="checklist-progress">
+
+                        <div class="progress-header">
+                            <span>Checklist progress</span>
+                            <strong id="goBagProgressText">0%</strong>
+                        </div>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="goBagProgress"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="preparedness-card">
+
+                    <div class="preparedness-card-icon">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+
+                    <span class="preparedness-label">EVACUATION PLAN</span>
+
+                    <h3>Know Where to Go</h3>
+
+                    <p>
+                        Every household should know its safest route
+                        and where the nearest evacuation center is.
+                    </p>
+
+                    <ul class="preparedness-list">
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Identify at least two possible evacuation routes.
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Know your community's designated evacuation center.
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Keep important contact numbers accessible.
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Follow instructions from local authorities.
+                        </li>
+
+                    </ul>
+
+                    <a href="https://hazardhunter.georisk.gov.ph/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-button">
+                        Check Hazard Information
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="preparedness-card">
+
+                    <div class="preparedness-card-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+
+                    <span class="preparedness-label">EMERGENCY HOTLINES</span>
+
+                    <h3>Keep Help Within Reach</h3>
+
+                    <div class="hotline-list">
+
+                        <a href="tel:911" class="hotline-item">
+                            <span>
+                                <strong>911</strong>
+                                <small>National Emergency Hotline</small>
+                            </span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <a href="tel:143" class="hotline-item">
+                            <span>
+                                <strong>143</strong>
+                                <small>Philippine Red Cross</small>
+                            </span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <a href="https://ehotlines.e.gov.ph/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="hotline-item">
+                            <span>
+                                <strong>Emergency Directory</strong>
+                                <small>Official Philippine emergency hotlines</small>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="preparedness-tools">
+
+                <div class="preparedness-tool-card">
+
+                    <i class="fa-solid fa-cloud-sun"></i>
+
+                    <div>
+                        <span>WEATHER UPDATES</span>
+                        <h3>PAGASA Weather & Warnings</h3>
+                        <p>
+                            PAGASA provides weather forecasts, tropical cyclone
+                            warnings, rainfall warnings, flood advisories,
+                            and other weather services.
+                        </p>
+
+                        <a
+                            href="https://www.pagasa.dost.gov.ph/weather"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-button">
+                            Open Weather Updates
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="preparedness-tool-card">
+
+                    <i class="fa-solid fa-earth-americas"></i>
+
+                    <div>
+                        <span>EARTHQUAKE MONITORING</span>
+                        <h3>Latest Earthquake Information</h3>
+                        <p>
+                            PHIVOLCS publishes earthquake information including
+                            event time, location, depth, and magnitude.
+                        </p>
+
+                        <a
+                            href="https://earthquake.phivolcs.dost.gov.ph/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-button">
+                            Check Earthquake Magnitude
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="preparedness-facts">
+
+                <div class="section-heading preparedness-mini-heading">
+
+                    <span>FACTS & INFORMATION</span>
+
+                    <h2>Why Reliable Information Matters</h2>
+
+                    <p>
+                        Use official sources for changing disaster conditions
+                        instead of relying on unverified posts.
+                    </p>
+
+                </div>
+
+
+                <div class="facts-grid">
+
+                    <div class="fact-card">
+
+                        <strong>92</strong>
+
+                        <span>PHIVOLCS seismic network stations reported on its earthquake monitoring page.</span>
+
+                        <a
+                            href="https://www.phivolcs.dost.gov.ph/eathquake-monitoring-system/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Source: PHIVOLCS
+                        </a>
+
+                    </div>
+
+
+                    <div class="fact-card">
+
+                        <strong>24/7</strong>
+
+                        <span>Unified 911 emergency service availability as listed by the Philippine government's emergency hotline directory.</span>
+
+                        <a
+                            href="https://ehotlines.e.gov.ph/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Source: PH Emergency Hotlines
+                        </a>
+
+                    </div>
+
+
+                    <div class="fact-card">
+
+                        <strong>Official</strong>
+
+                        <span>PAGASA provides weather forecasts, tropical cyclone warnings, rainfall warnings, and flood-related advisories.</span>
+
+                        <a
+                            href="https://www.pagasa.dost.gov.ph/products-and-services"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Source: PAGASA
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="preparedness-resources">
+
+                <div class="preparedness-resource-card">
+
+                    <i class="fa-solid fa-file-arrow-down"></i>
+
+                    <div>
+
+                        <span>DOWNLOADABLE MATERIALS</span>
+
+                        <h3>Preparedness Flyers & Guides</h3>
+
+                        <p>
+                            PAGASA provides information and education materials
+                            such as tropical cyclone and flood-related flyers.
+                        </p>
+
+                        <a
+                            href="https://www.pagasa.dost.gov.ph/learnings/publication"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-button">
+                            View Educational Materials
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="preparedness-resource-card">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    <div>
+
+                        <span>OFFICIAL DISASTER INFORMATION</span>
+
+                        <h3>NDRRMC Philippines</h3>
+
+                        <p>
+                            Follow the NDRRMC for disaster risk reduction and
+                            management information and official updates.
+                        </p>
+
+                        <a
+                            href="https://ndrrmc.gov.ph/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-button">
+                            Visit NDRRMC
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
+
+
+
+        <!-- =========================================================
+             LIVE DISASTER MONITORING
+        ========================================================== -->
+
+        <section class="section live-monitoring" id="live-monitoring">
+
+            <div class="section-heading">
+                <span class="section-label">LIVE MONITORING</span>
+                <h2>Philippines Disaster Monitoring Map</h2>
+                <p>
+                    Check official government sources for tropical cyclone information,
+                    recent earthquake events, and multi-hazard conditions across the Philippines.
+                </p>
+            </div>
+
+            <div class="monitoring-alert">
+                <div class="monitoring-alert-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div>
+                    <strong>Use official sources for the latest information.</strong>
+                    <p>
+                        PrepareNow PH does not predict earthquakes. Earthquake information below
+                        refers to recent recorded events, while PAGASA provides tropical cyclone
+                        monitoring and forecasts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="monitoring-map-card">
+                <div class="monitoring-map-header">
+                    <div>
+                        <span class="preparedness-label">OFFICIAL MULTI-HAZARD MAP</span>
+                        <h3>HazardHunterPH</h3>
+                        <p>
+                            Explore seismic, volcanic, flood, severe wind, storm surge, and other
+                            hazard information using the government multi-agency map.
+                        </p>
+                    </div>
+                    <a class="btn btn-primary" href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener noreferrer">
+                        Open Full Map <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="monitoring-map-panel">
+                    <div class="map-visual">
+                        <div class="map-grid"></div>
+                        <div class="ph-marker marker-north"><span></span><small>LUZON</small></div>
+                        <div class="ph-marker marker-central"><span></span><small>VISAYAS</small></div>
+                        <div class="ph-marker marker-south"><span></span><small>MINDANAO</small></div>
+                        <div class="map-label">
+                            <i class="fa-solid fa-location-dot"></i>
+                            PHILIPPINES
+                        </div>
+                    </div>
+
+                    <div class="map-info">
+                        <span class="preparedness-label">OFFICIAL DATA HUB</span>
+                        <h4>Check the latest hazards</h4>
+                        <p>
+                            This dashboard does not invent or predict disaster events.
+                            Use the official government monitoring pages for current
+                            earthquake events, tropical cyclones, weather, and hazards.
+                        </p>
+
+                        <div class="map-source-list">
+                            <a href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span><strong>HazardHunterPH</strong><small>Multi-hazard map and assessment</small></span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://earthquake.phivolcs.dost.gov.ph/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-house-crack"></i>
+                                <span><strong>PHIVOLCS Earthquakes</strong><small>Recent recorded earthquake events</small></span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://bagong.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-hurricane"></i>
+                                <span><strong>PAGASA Typhoon Monitoring</strong><small>Official tropical cyclone bulletins</small></span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="monitoring-source-note">
+                    Source: GeoRisk Philippines / DOST-PHIVOLCS / DOST-PAGASA and other participating government agencies.
+                </p>
+            </div>
+
+            <div class="monitoring-grid">
+
+                <article class="monitoring-card">
+                    <div class="monitoring-card-icon earthquake-icon">
+                        <i class="fa-solid fa-house-crack"></i>
+                    </div>
+                    <span class="preparedness-label">PHIVOLCS</span>
+                    <h3>Recent Earthquakes</h3>
+                    <p>
+                        View the latest recorded seismic events in the Philippines, including
+                        magnitude, depth, time, coordinates, and location.
+                    </p>
+                    <a class="monitoring-link" href="https://earthquake.phivolcs.dost.gov.ph/" target="_blank" rel="noopener noreferrer">
+                        View Latest Earthquake Information
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="monitoring-card">
+                    <div class="monitoring-card-icon typhoon-icon">
+                        <i class="fa-solid fa-hurricane"></i>
+                    </div>
+                    <span class="preparedness-label">PAGASA</span>
+                    <h3>Typhoon Monitoring</h3>
+                    <p>
+                        Check tropical cyclone bulletins, current weather conditions, and official
+                        forecasts from PAGASA.
+                    </p>
+                    <a class="monitoring-link" href="https://bagong.pagasa.dost.gov.ph/tropical-cyclone/severe-weather-bulletin" target="_blank" rel="noopener noreferrer">
+                        View Tropical Cyclone Bulletins
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="monitoring-card">
+                    <div class="monitoring-card-icon forecast-icon">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                    </div>
+                    <span class="preparedness-label">PAGASA FORECAST</span>
+                    <h3>Possible Tropical Cyclone Formation</h3>
+                    <p>
+                        PAGASA also publishes a TC Threat Potential Forecast to show the likelihood
+                        of tropical cyclone formation and possible track guidance.
+                    </p>
+                    <a class="monitoring-link" href="https://bagong.pagasa.dost.gov.ph/tropical-cyclone/tc-threat-potential-forecast" target="_blank" rel="noopener noreferrer">
+                        View TC Threat Potential Forecast
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+            </div>
+
+            <div class="monitoring-actions">
+                <a class="monitoring-action" href="https://maps.phivolcs.dost.gov.ph/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-map"></i>
+                    <span><strong>PHIVOLCS Maps</strong><small>Seismic and volcanic maps</small></span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+
+                <a class="monitoring-action" href="https://origin.pagasa.dost.gov.ph/weather" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <span><strong>PAGASA Weather</strong><small>Current weather and forecasts</small></span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+
+                <a class="monitoring-action" href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span><strong>HazardHunterPH</strong><small>Multi-hazard assessment</small></span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+
+        </section>
 
     <!-- =========================
          FOOTER
@@ -1230,6 +1877,43 @@
 
             </div>
 
+
+        </div>
+
+
+        <div class="footer-credits">
+
+            <div class="footer-credits-title">
+                <i class="fa-solid fa-heart"></i>
+                <span>Credits &amp; Attributions</span>
+            </div>
+
+            <p>
+                This website uses and adapts resources from different sources.
+                Credit is given to the original creators, organizations,
+                libraries, templates, images, icons, fonts, and official data
+                used in the development of PrepareNow PH.
+            </p>
+
+            <div class="credit-links">
+                <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">
+                    PAGASA
+                </a>
+                <a href="https://www.phivolcs.dost.gov.ph/" target="_blank" rel="noopener noreferrer">
+                    PHIVOLCS
+                </a>
+                <a href="https://ndrrmc.gov.ph/" target="_blank" rel="noopener noreferrer">
+                    NDRRMC
+                </a>
+                <a href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener noreferrer">
+                    HazardHunterPH
+                </a>
+            </div>
+
+            <p class="credit-note">
+                If you recognize a resource that is not listed here, please let us know
+                so the proper creator or source can be credited.
+            </p>
 
         </div>
 
